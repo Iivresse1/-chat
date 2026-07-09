@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: chat-web
+
+  profiles:
+    active: develop

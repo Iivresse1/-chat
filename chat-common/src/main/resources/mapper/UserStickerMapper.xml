@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.chat.common.mapper.UserStickerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.chat.common.entity.UserSticker">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="sticker_url" property="stickerUrl" />
+        <result column="sticker_name" property="stickerName" />
+        <result column="type" property="type" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, sticker_url, sticker_name, type, create_time
+    </sql>
+
+</mapper>

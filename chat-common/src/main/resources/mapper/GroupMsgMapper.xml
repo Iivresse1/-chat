@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.chat.common.mapper.GroupMsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.chat.common.entity.GroupMsg">
+        <id column="id" property="id" />
+        <result column="group_id" property="groupId" />
+        <result column="from_user_id" property="fromUserId" />
+        <result column="msg_type" property="msgType" />
+        <result column="content" property="content" />
+        <result column="file_url" property="fileUrl" />
+        <result column="file_name" property="fileName" />
+        <result column="file_size" property="fileSize" />
+        <result column="msg_is_recalled" property="msgIsRecalled" />
+        <result column="msg_memtion_user_id" property="msgMemtionUserId" />
+        <result column="msg_recall_time" property="msgRecallTime" />
+        <result column="msg_send_time" property="msgSendTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, group_id, from_user_id, msg_type, content, file_url, file_name, file_size, msg_is_recalled, msg_memtion_user_id, msg_recall_time, msg_send_time
+    </sql>
+
+</mapper>

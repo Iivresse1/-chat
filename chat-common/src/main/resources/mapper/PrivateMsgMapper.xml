@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.chat.common.mapper.PrivateMsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.chat.common.entity.PrivateMsg">
+        <id column="id" property="id" />
+        <result column="from_user_id" property="fromUserId" />
+        <result column="to_user_id" property="toUserId" />
+        <result column="msg_type" property="msgType" />
+        <result column="msg_status" property="msgStatus" />
+        <result column="msg_is_recalled" property="msgIsRecalled" />
+        <result column="msg_send_time" property="msgSendTime" />
+        <result column="file_url" property="fileUrl" />
+        <result column="file_name" property="fileName" />
+        <result column="file_size" property="fileSize" />
+        <result column="content" property="content" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, from_user_id, to_user_id, msg_type, msg_status, msg_is_recalled, msg_send_time, file_url, file_name, file_size, content
+    </sql>
+
+</mapper>
