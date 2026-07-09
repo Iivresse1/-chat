@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^1.17.0",
+    "element-plus": "^2.14.1"
+  },
+  "devDependencies": {
+    "@fontsource/bebas-neue": "^5.2.7"
+  }
+}
